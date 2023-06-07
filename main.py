@@ -77,6 +77,4 @@ if __name__ == '__main__':
     new_file = 'new_address_book.csv'
     contact_list = read_csv(old_file)
     right_rows = get_right_rows(contact_list)
-    for elem in right_rows:
-        print(elem)
     save_csv(new_file, right_rows)
